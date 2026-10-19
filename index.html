@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أبو الزوز | مطعم ومقهى سوري - الزمالك</title>
+  <meta name="description" content="أبو الزوز - مطعم ومقهى سوري أصيل في الزمالك بإطلالة على النيل. فطور شامي، مازة، مشاوي، وحلويات.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">أبو الزوز</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#menu">المنيو</a></li>
+          <li><a href="#gallery">المعرض</a></li>
+          <li><a href="#reservation">حجز</a></li>
+          <li><a href="#contact">تواصل</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="القائمة">☰</button>
+    </div>
+  </header>
+
+  <!-- القسم الرئيسي -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>أبو الزوز</h1>
+      <p class="hero-sub">مقهى ومطعم سوري أصيل — بإطلالة على النيل في قلب الزمالك</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">شاهد المنيو</a>
+        <a href="#reservation" class="btn btn-outline">احجز طاولة</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- من نحن -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">من نحن</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>في قلب الزمالك، وعلى ضفاف النيل، يفتح <strong>أبو الزوز</strong> أبوابه ليقدم لك تجربة سورية أصيلة. من الفطور الشامي الغني، إلى المازة والمشاوي، وحتى الحلويات الشرقية — كل طبق يُحضّر بحب وبنكهة الشام.</p>
+          <p>استمتع بجلساتنا الداخلية الدافئة أو الخارجية المطلة على النيل، خاصة وقت الغروب، حيث يمتزج عبق الشاي السوري بجمال النيل.</p>
+          <ul class="features">
+            <li>🌊 إطلالة مباشرة على النيل</li>
+            <li>🍽️ فطور شامي ومازة ومشاوي</li>
+            <li>🪑 جلسات داخلية وخارجية</li>
+            <li>🕐 مفتوح يوميًا</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="images/about.jpg" alt="مطعم أبو الزوز" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- المنيو -->
+  <section id="menu" class="section menu">
+    <div class="container">
+      <h2 class="section-title">المنيو</h2>
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="breakfast">الفطور الشامي</button>
+        <button class="tab-btn" data-tab="mezze">المازة</button>
+        <button class="tab-btn" data-tab="grills">المشاوي</button>
+        <button class="tab-btn" data-tab="desserts">الحلويات</button>
+      </div>
+
+      <div class="menu-content active" id="breakfast">
+        <div class="menu-item"><span>فول مدمس</span><span class="price">E£ 45</span></div>
+        <div class="menu-item"><span>فلافل (طبق)</span><span class="price">E£ 50</span></div>
+        <div class="menu-item"><span>شكشوكة</span><span class="price">E£ 60</span></div>
+        <div class="menu-item"><span>لبنة بالزيت</span><span class="price">E£ 55</span></div>
+        <div class="menu-item"><span>جبنة حلوم مشوية</span><span class="price">E£ 75</span></div>
+        <div class="menu-item"><span>فطور شامي كامل</span><span class="price">E£ 150</span></div>
+      </div>
+
+      <div class="menu-content" id="mezze">
+        <div class="menu-item"><span>حمص أبو الزوز</span><span class="price">E£ 65</span></div>
+        <div class="menu-item"><span>متبل باذنجان</span><span class="price">E£ 60</span></div>
+        <div class="menu-item"><span>محمرة بالجوز</span><span class="price">E£ 70</span></div>
+        <div class="menu-item"><span>تبولة</span><span class="price">E£ 55</span></div>
+        <div class="menu-item"><span>فتوش</span><span class="price">E£ 55</span></div>
+        <div class="menu-item"><span>ورق عنب</span><span class="price">E£ 80</span></div>
+      </div>
+
+      <div class="menu-content" id="grills">
+        <div class="menu-item"><span>كباب هندي</span><span class="price">E£ 180</span></div>
+        <div class="menu-item"><span>مشاوي مشكلة</span><span class="price">E£ 220</span></div>
+        <div class="menu-item"><span>شيش طاووق</span><span class="price">E£ 170</span></div>
+        <div class="menu-item"><span>شيش برك</span><span class="price">E£ 140</span></div>
+        <div class="menu-item"><span>فتة باذنجان</span><span class="price">E£ 130</span></div>
+        <div class="menu-item"><span>كباب حلبي</span><span class="price">E£ 190</span></div>
+      </div>
+
+      <div class="menu-content" id="desserts">
+        <div class="menu-item"><span>كنافة نابلسية</span><span class="price">E£ 90</span></div>
+        <div class="menu-item"><span>بوزة عربية</span><span class="price">E£ 70</span></div>
+        <div class="menu-item"><span>كنافة بالقشطة</span><span class="price">E£ 95</span></div>
+        <div class="menu-item"><span>شاي سوري</span><span class="price">E£ 30</span></div>
+        <div class="menu-item"><span>قهوة عربية</span><span class="price">E£ 35</span></div>
+      </div>
+      <p class="menu-note">* الأسعار تقريبية وقابلة للتغيير. تُضاف الضرائب والرسوم.</p>
+    </div>
+  </section>
+
+  <!-- المعرض -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <h2 class="section-title">المعرض</h2>
+      <div class="gallery-grid">
+        <img src="images/gallery1.jpg" alt="طبق سوري" onerror="this.style.display='none'">
+        <img src="images/gallery2.jpg" alt="جلسة المطعم" onerror="this.style.display='none'">
+        <img src="images/gallery3.jpg" alt="إطلالة النيل" onerror="this.style.display='none'">
+        <img src="images/gallery4.jpg" alt="حلويات" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </section>
+
+  <!-- الحجز -->
+  <section id="reservation" class="section reservation">
+    <div class="container">
+      <h2 class="section-title">احجز طاولة</h2>
+      <form class="reservation-form" id="reservationForm">
+        <div class="form-group">
+          <label for="name">الاسم</label>
+          <input type="text" id="name" name="name" required placeholder="اسمك الكريم">
+        </div>
+        <div class="form-group">
+          <label for="phone">رقم الهاتف</label>
+          <input type="tel" id="phone" name="phone" required placeholder="01xxxxxxxxx">
+        </div>
+        <div class="form-group">
+          <label for="date">التاريخ</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">الوقت</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">عدد الأشخاص</label>
+          <input type="number" id="guests" name="guests" min="1" max="20" required>
+        </div>
+        <button type="submit" class="btn btn-primary">تأكيد الحجز</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- التواصل -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">تواصل معنا</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>📍 <strong>العنوان:</strong> 33 شارع أبو الفدا، الزمالك، القاهرة</p>
+          <p>📞 <strong>الهاتف:</strong> <a href="tel:01012005888">01012005888</a></p>
+          <p>📞 <strong>أرضي:</strong> <a href="tel:0233368541">0233368541</a></p>
+          <p>🕐 <strong>ساعات العمل:</strong> يوميًا من 8 صباحًا حتى 2 بعد منتصف الليل</p>
+          <div class="social-links">
+            <a href="#" target="_blank" rel="noopener">فيسبوك</a>
+            <a href="#" target="_blank" rel="noopener">إنستغرام</a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps?q=Abou+al+Zouz+Zamalek+Cairo&output=embed"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> أبو الزوز — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <!-- زر واتساب عائم -->
+  <a href="https://wa.me/201012005888" class="whatsapp-float" target="_blank" rel="noopener" aria-label="واتساب">💬</a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
